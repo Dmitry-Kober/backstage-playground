@@ -1,10 +1,10 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: analytics production pipeline 1
+  name: analytics-production-pipeline-1
   annotations:
-    github.com/project-slug: Dmitry-Kober/backstage-playground
+    platform: some-analytical-platform
 spec:
-  type: other
-  lifecycle: unknown
-  owner: Dmitrii Kober
+  type: Component
+  lifecycle: test
+  owner: Dmitrii_Kober
