@@ -4,7 +4,8 @@ metadata:
   name: analytics-production-pipeline-1
   annotations:
     platform: some-analytical-platform
+    backstage.io/techdocs-ref: dir:.
 spec:
-  type: Component
+  type: end-user-report
   lifecycle: test
   owner: Dmitrii_Kober
