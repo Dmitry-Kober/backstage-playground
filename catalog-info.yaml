@@ -4,7 +4,7 @@ metadata:
   name: analytics-production-pipeline-1
   annotations:
     platform: some-analytical-platform
-    backstage.io/techdocs-ref: url:https://github.com/Dmitry-Kober/backstage-playground/blob/main/docs/another_doc.md
+    backstage.io/techdocs-ref: url:https://github.com/Dmitry-Kober/backstage-playground/blob/main/docs1
 spec:
   type: end-user-report
   lifecycle: test
