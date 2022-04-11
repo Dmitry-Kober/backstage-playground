@@ -4,7 +4,7 @@ metadata:
   name: analytics-production-pipeline-1
   annotations:
     platform: some-analytical-platform
-    backstage.io/techdocs-ref: dir:./another_doc_dir
+    backstage.io/techdocs-ref: dir:.
 spec:
   type: end-user-report
   lifecycle: test
