@@ -1,7 +1,7 @@
 site_name: 'another-backstage-docs'
 
 nav:
-  - Home: another_doc_dir/docs/new_index.md
+  - HomePage: new_index.md
 
 plugins:
   - techdocs-core
