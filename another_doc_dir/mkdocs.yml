@@ -1,0 +1,8 @@
+site_name: 'backstage-docs'
+
+nav:
+  - Home: new_index.md
+  - Home: new_index.md
+
+plugins:
+  - techdocs-core
