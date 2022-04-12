@@ -5,6 +5,5 @@ nav:
   - Components: '*include ./components/*/mkdocs.yml'
 
 plugins:
-  - techdocs-core
   - monorepo
 
