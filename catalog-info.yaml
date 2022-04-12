@@ -1,0 +1,11 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: root
+  annotations:
+    platform: some-analytical-platform
+    backstage.io/techdocs-ref: dir:.
+spec:
+  type: system
+  lifecycle: test
+  owner: Dmitrii_Kober
