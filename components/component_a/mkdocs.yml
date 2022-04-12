@@ -1,4 +1,4 @@
 site_name: Component A
 
 nav:
-  - Home: "README.md"
+  - Home: README.md
