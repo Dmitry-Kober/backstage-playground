@@ -2,8 +2,7 @@ site_name: 'backstage-docs-site'
 
 nav:
   - Intro: 'index.md'
-  - Component A: '!include ./components/component_a/mkdocs.yml'
-  - Component B: '!include ./components/component_b/mkdocs.yml'
+  - Components: '*include ./components/*/mkdocs.yml'
 
 plugins:
   - monorepo
