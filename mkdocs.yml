@@ -6,5 +6,5 @@ nav:
 
 plugins:
   - techdocs-core
-  - monorep
+  - monorepo
 
