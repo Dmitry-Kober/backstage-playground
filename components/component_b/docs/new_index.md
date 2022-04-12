@@ -1,0 +1,1 @@
+# README document from the component B

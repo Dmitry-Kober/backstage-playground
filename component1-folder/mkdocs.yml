@@ -1,7 +1,0 @@
-site_name: 'another-1-backstage-docs'
-
-nav:
-  - HomePage1: new_index1.md
-
-plugins:
-  - techdocs-core
