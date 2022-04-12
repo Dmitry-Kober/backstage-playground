@@ -1,0 +1,11 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: analytics-production-pipeline-2
+  annotations:
+    platform: some-analytical-platform
+    backstage.io/techdocs-ref: dir:.
+spec:
+  type: end-user-report1
+  lifecycle: test
+  owner: Dmitrii_Kober
