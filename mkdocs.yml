@@ -5,5 +5,5 @@ nav:
   - Components: '*include ./components/*/mkdocs.yml'
 
 plugins:
-  - monorepo
+  - monorepoasd';lfgkjs;aldkjh
 
