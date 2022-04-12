@@ -2,4 +2,4 @@ site_name: Component A
 
 nav:
   - Home: 'index.md'
-  - Docs: 'README.md'
+  - Docs: 'other.md'
