@@ -1,4 +1,4 @@
-site_name: 'Component B'
+site_name: Component B
 
 nav:
-  - Home: 'README.md'
+  - Home: "README.md"

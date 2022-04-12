@@ -1,7 +1,7 @@
 site_name: 'backstage-docs-site'
 
 nav:
-  - Into: 'index.md'
+  - Into: index.md
   - Components: '*include ./components/*/mkdocs.yml'
 
 plugins:
