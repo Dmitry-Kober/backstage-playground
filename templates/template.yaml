@@ -14,15 +14,38 @@ spec:
     - title: Fill in some steps
       required:
         - name
+          platform
+          type
+          lifecycle
+          owner
       properties:
         name:
-          title: Name
+          title: Component name
           type: string
           description: Unique name of the component
           ui:autofocus: true
           ui:options:
             rows: 5
-    - title: Choose a location
+        platform:
+          title: Component platform
+          type: string
+          description: Name of the platform that manages the new component
+        type:
+          title: Component type, e.g. system, sub-system.
+          type: string
+          description: The nature of the component
+        lifecycle:
+          title: Lifecycle
+          type: string
+          description: Lifecycle step, e.g. development, test, production.          
+        owner:
+          title: Owner
+          type: string
+          description: Component's owner\developer
+        
+        
+        
+    - title: Choose the target repository
       required:
         - repoUrl
       properties:
@@ -35,21 +58,25 @@ spec:
               - github.com
 
   # here's the steps that are executed in series in the scaffolder backend
-  steps:
-    - id: fetch-base
-      name: Fetch Base
+  steps:   
+    - id: prepare-template
+      name: Prepare Template
       action: fetch:template
       input:
-        url: ./template
+        url: ./component
         values:
           name: ${{ parameters.name }}
+          platform: ${{ parameters.platform }}
+          type: ${{ parameters.type }}
+          lifecycle: ${{ parameters.lifecycle }}
+          owner: ${{ parameters.owner }}     
 
     - id: fetch-docs
       name: Fetch Docs
       action: fetch:plain
       input:
-        targetPath: ./community
-        url: https://github.com/backstage/community/tree/main/backstage-community-sessions
+        targetPath: ./docs
+        url: https://github.com/Dmitry-Kober/backstage-playground/tree/main/templates/component/docs
 
     - id: publish
       name: Publish
@@ -59,5 +86,5 @@ spec:
         branchName: 'master-candidate'
         title: 'new component creation PR - title'
         description: 'new component creation PR - description'
-        targetPath: 'components'
+        targetPath: 'components/new-component'
        
