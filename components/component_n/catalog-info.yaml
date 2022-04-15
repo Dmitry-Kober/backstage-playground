@@ -6,6 +6,6 @@ metadata:
     platform: n
     backstage.io/techdocs-ref: dir:.
 spec:
-  type: n
-  lifecycle: n
-  owner: n
+  type: subsystem
+  lifecycle: test
+  owner: Dmitrii_Kober
