@@ -15,7 +15,7 @@ spec:
       required:
         - name
           platform
-          type
+          cmp_type
           lifecycle
           owner
       properties:
@@ -30,7 +30,7 @@ spec:
           title: Component platform
           type: string
           description: Name of the platform that manages the new component
-        type:
+        cmp_type:
           title: Component type, e.g. system, sub-system.
           type: string
           description: The nature of the component
@@ -41,10 +41,7 @@ spec:
         owner:
           title: Owner
           type: string
-          description: Component's owner\developer
-        
-        
-        
+          description: Component's owner\developer 
     - title: Choose the target repository
       required:
         - repoUrl
