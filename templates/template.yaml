@@ -14,6 +14,10 @@ spec:
     - title: Fill in some steps
       required:
         - name
+        - platform
+        - type
+        - lifecycle
+        - owner
       properties:
         name:
           title: Component name
@@ -26,7 +30,7 @@ spec:
           title: Component platform
           type: string
           description: Name of the platform that manages the new component
-        cmp_type:
+        type:
           title: Component type, e.g. system, sub-system.
           type: string
           description: The nature of the component
@@ -68,7 +72,7 @@ spec:
       name: Fetch Docs
       action: fetch:plain
       input:
-        targetPath: ./docs
+        targetPath: ./new_docs
         url: https://github.com/Dmitry-Kober/backstage-playground/tree/main/templates/component/docs
 
     - id: publish
