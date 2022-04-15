@@ -3,7 +3,7 @@ kind: Component
 metadata:
   name: component_n
   annotations:
-    platform: n
+    platform: someplatform
     backstage.io/techdocs-ref: dir:.
 spec:
   type: subsystem
