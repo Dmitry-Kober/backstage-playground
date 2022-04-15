@@ -14,10 +14,6 @@ spec:
     - title: Fill in some steps
       required:
         - name
-          platform
-          cmp_type
-          lifecycle
-          owner
       properties:
         name:
           title: Component name
