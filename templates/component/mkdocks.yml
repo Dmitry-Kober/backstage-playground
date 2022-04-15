@@ -1,4 +1,4 @@
-site_name: ${{ values.name }}
+site_name: Component ${{ values.name }}
 
 nav:
   - Home: 'index.md'

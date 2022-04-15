@@ -68,13 +68,6 @@ spec:
           lifecycle: ${{ parameters.lifecycle }}
           owner: ${{ parameters.owner }}       
 
-    - id: fetch-docs
-      name: Fetch Docs
-      action: fetch:plain
-      input:
-        targetPath: ./new_docs
-        url: https://github.com/Dmitry-Kober/backstage-playground/tree/main/templates/component/docs
-
     - id: publish
       name: Publish
       action: publish:github:pull-request
