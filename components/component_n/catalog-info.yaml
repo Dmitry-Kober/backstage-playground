@@ -1,7 +1,7 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: n
+  name: component_n
   annotations:
     platform: n
     backstage.io/techdocs-ref: dir:.
