@@ -1,0 +1,4 @@
+site_name: Component n
+
+nav:
+  - Home: 'index.md'
