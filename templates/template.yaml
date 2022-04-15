@@ -1,13 +1,13 @@
-apiVersion: scaffolder.backstage.io/v1beta3
+apiVersion: backstage.io/v1beta2
 kind: Template
 # some metadata about the template itself
 metadata:
-  name: v1beta3-demo
-  title: Test Action template
-  description: scaffolder v1beta3 template demo
+  name: component-creation-template
+  title: Component Creation Template
+  description: creation and auto-registration of a backstage component
 spec:
-  owner: backstage/techdocs-core
-  type: service
+  owner: Dmitrii-Kober
+  type: component
 
   # these are the steps which are rendered in the frontend with the form input
   parameters:
@@ -53,15 +53,11 @@ spec:
 
     - id: publish
       name: Publish
-      action: publish:github
+      action: publish:github:pull-request
       input:
-        allowedHosts: ['github.com']
-        description: This is ${{ parameters.name }}
         repoUrl: ${{ parameters.repoUrl }}
-
-    - id: register
-      name: Register
-      action: catalog:register
-      input:
-        repoContentsUrl: ${{ steps.publish.output.repoContentsUrl }}
-        catalogInfoPath: '/catalog-info.yaml'
+        branchName: 'master-candidate'
+        title: 'new component creation PR - title'
+        description: 'new component creation PR - description'
+        targetPath: 'components'
+       
