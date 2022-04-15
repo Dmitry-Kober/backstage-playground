@@ -7,7 +7,7 @@ metadata:
   description: creation and auto-registration of a backstage component
 spec:
   owner: Dmitrii-Kober
-  type: component
+  type: service
 
   # these are the steps which are rendered in the frontend with the form input
   parameters:
