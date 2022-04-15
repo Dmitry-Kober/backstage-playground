@@ -60,21 +60,13 @@ spec:
       name: Prepare Component Template
       action: fetch:template
       input:
-        url: ./component/catalog-info.yaml
+        url: ./component
         values:
           name: ${{ parameters.name }}
           platform: ${{ parameters.platform }}
           type: ${{ parameters.type }}
           lifecycle: ${{ parameters.lifecycle }}
-          owner: ${{ parameters.owner }}  
-
-    - id: prepare-documentation-template
-      name: Prepare Documentation Template
-      action: fetch:template
-      input:
-        url: ./component/mkdocks.yml
-        values:
-          name: ${{ parameters.name }}       
+          owner: ${{ parameters.owner }}       
 
     - id: fetch-docs
       name: Fetch Docs
@@ -88,8 +80,7 @@ spec:
       action: publish:github:pull-request
       input:
         repoUrl: ${{ parameters.repoUrl }}
-        branchName: master-candidate-${{ _now }}
-        title: 'new component creation PR - title'
-        description: 'new component creation PR - description'
-        targetPath: components/component-${{ parameters.name }}
-       
+        branchName: component-creation-candidate-${{ parameters.name }}
+        title: Component creation - ${{ parameters.name }}
+        description: Backstage-featured component creation
+        targetPath: ./components/component-${{ parameters.name }}   
