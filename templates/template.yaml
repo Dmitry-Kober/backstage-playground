@@ -83,4 +83,4 @@ spec:
         branchName: component-creation-candidate-${{ parameters.name }}
         title: Component creation - ${{ parameters.name }}
         description: Backstage-featured component creation
-        targetPath: ./components/component-${{ parameters.name }}   
+        targetPath: components/component-${{ parameters.name }}   
