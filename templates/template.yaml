@@ -56,17 +56,25 @@ spec:
 
   # here's the steps that are executed in series in the scaffolder backend
   steps:   
-    - id: prepare-template
-      name: Prepare Template
+    - id: prepare-component-template
+      name: Prepare Component Template
       action: fetch:template
       input:
-        url: ./component
+        url: ./component/catalog-info.yaml
         values:
           name: ${{ parameters.name }}
           platform: ${{ parameters.platform }}
           type: ${{ parameters.type }}
           lifecycle: ${{ parameters.lifecycle }}
-          owner: ${{ parameters.owner }}     
+          owner: ${{ parameters.owner }}  
+
+    - id: prepare-documentation-template
+      name: Prepare Documentation Template
+      action: fetch:template
+      input:
+        url: ./component/mkdocks.yml
+        values:
+          name: ${{ parameters.name }}       
 
     - id: fetch-docs
       name: Fetch Docs
@@ -80,8 +88,8 @@ spec:
       action: publish:github:pull-request
       input:
         repoUrl: ${{ parameters.repoUrl }}
-        branchName: 'master-candidate'
+        branchName: master-candidate-${{ _now }}
         title: 'new component creation PR - title'
         description: 'new component creation PR - description'
-        targetPath: 'components/new-component'
+        targetPath: components/component-${{ parameters.name }}
        
