@@ -5,6 +5,4 @@ metadata:
   description: Solution architecture team
 spec:
   type: solution-architecture-team
-  profile:
-     displayName: Solution Architecture Team: Baywatch
   children: []
