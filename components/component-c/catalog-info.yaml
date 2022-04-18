@@ -1,0 +1,12 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: c
+  annotations:
+    platform: c
+    backstage.io/techdocs-ref: dir:.
+spec:
+  type: sub-system
+  lifecycle: test
+  owner: group:group_baywatch
+  subcomponentOf: root
