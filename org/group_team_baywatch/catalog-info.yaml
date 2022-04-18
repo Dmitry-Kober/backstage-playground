@@ -1,0 +1,10 @@
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: group_baywatch
+  description: Solution architecture team
+spec:
+  type: solution-architecture-team
+  profile:
+     displayName: Solution Architecture Team: Baywatch
+  children: []
