@@ -1,0 +1,8 @@
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: Dmitrii_Kober
+spec:
+  profile:
+     displayName: Dmitrii Kober
+     email: dmitrii_kober@epam.com
