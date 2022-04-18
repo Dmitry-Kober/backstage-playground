@@ -8,5 +8,5 @@ metadata:
 spec:
   type: subsystem
   lifecycle: test
-  owner: user:default/Dmitrii_Kober
+  owner: user:default/dmitrii_kober
   subcomponentOf: component:default/root
