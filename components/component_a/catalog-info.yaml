@@ -9,4 +9,4 @@ spec:
   type: subsystem
   lifecycle: test
   owner: user:default/Dmitrii_Kober
-  partOf: component:default/root
+  subcomponentOf: component:default/root
