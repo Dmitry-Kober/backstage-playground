@@ -6,6 +6,6 @@ metadata:
     platform: some-analytical-platform
     backstage.io/techdocs-ref: dir:.
 spec:
-  type: system
+  type: service
   lifecycle: test
   owner: user:default/dmitrii_kober
