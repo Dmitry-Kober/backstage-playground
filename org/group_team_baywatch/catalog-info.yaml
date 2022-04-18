@@ -6,6 +6,6 @@ metadata:
 spec:
   type: solution-architecture-team
   profile:
-     desplayName: SA Group
+     desplayName: SA Group Baywatch
      email: group_baywatch@epam.com
   children: []
