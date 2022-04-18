@@ -6,3 +6,4 @@ spec:
   profile:
      displayName: Dmitrii Kober
      email: dmitrii_kober@epam.com
+     memberOf: [team_baywatch]
