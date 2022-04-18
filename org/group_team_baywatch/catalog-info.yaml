@@ -5,4 +5,7 @@ metadata:
   description: Solution architecture team
 spec:
   type: solution-architecture-team
+  profile:
+     desplayName: SA Group
+     email: group_baywatch@epam.com
   children: []
