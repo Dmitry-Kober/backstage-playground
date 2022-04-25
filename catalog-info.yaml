@@ -1,11 +1,20 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: root
+  name: root-service
+  description: This is the service which aims to do cool stuff and plays the central role in this demo ;)
+  labels:
+     cost-tracking/region: cost-center-geo-bg
+  tags:
+     - business-critical
+  links:
+     - url: https://backstage.io/
+       title: The inspirational web page
+       icon: dashboard
   annotations:
     platform: some-analytical-platform
     backstage.io/techdocs-ref: dir:.
 spec:
-  type: system
-  lifecycle: test
+  type: service
+  lifecycle: production
   owner: user:default/dmitrii_kober
