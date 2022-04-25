@@ -8,5 +8,5 @@ metadata:
 spec:
   type: service
   lifecycle: test
-  owner: user:default/dmitrii_kober
+  owner: user:default/other_guy
   subcomponentOf : component:default/root-service

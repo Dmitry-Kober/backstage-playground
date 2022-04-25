@@ -1,0 +1,9 @@
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: other_guy
+spec:
+  profile:
+     displayName: Other Guy
+     email: other_guy@epam.com
+  memberOf: [group_baywatch]
