@@ -10,4 +10,4 @@ spec:
   lifecycle: test
   owner: user:default/dmitrii_kober
   subcomponentOf: component:default/root-service
-  providesApis: api:default/component-a-api
+  providesApis: [api:default/component-a-api]
