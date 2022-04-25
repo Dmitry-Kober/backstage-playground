@@ -8,6 +8,7 @@ spec:
   lifecycle: test
   owner: group:default/group_baywatch
   system: engagement-portal
+  apiProvidedBy: component:default/component_a
   definition: |
     openapi: "3.0.0"
     info:
